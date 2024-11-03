@@ -1,1 +1,1 @@
-require board=msmnile|OnePlus7TPro
+require board=msmnile|OnePlus7TProNR
