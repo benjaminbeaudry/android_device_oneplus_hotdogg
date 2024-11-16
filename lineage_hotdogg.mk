@@ -8,27 +8,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from hotdog device
-$(call inherit-product, device/oneplus/hotdog/device.mk)
+# Inherit from hotdogg device
+$(call inherit-product, device/oneplus/hotdogg/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hotdog
-PRODUCT_DEVICE := hotdog
+PRODUCT_NAME := lineage_hotdogg
+PRODUCT_DEVICE := hotdogg
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := HD1911
 PRODUCT_BRAND := OnePlus
 
-PRODUCT_SYSTEM_NAME := OnePlus7TPro
-PRODUCT_SYSTEM_DEVICE := OnePlus7TPro
+PRODUCT_SYSTEM_NAME := OnePlus7TProNR
+PRODUCT_SYSTEM_DEVICE := OnePlus7TProNR
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus7TPro-user 12 SKQ1.211113.001 Q.202212132005 release-keys" \
+    PRIVATE_BUILD_DESC="OnePlus7TProNR-user 11 RKQ1.201022.002 2108021431 release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := OnePlus/OnePlus7TPro/OnePlus7TPro:12/SKQ1.211113.001/Q.202212132005:user/release-keys
+BUILD_FINGERPRINT := OnePlus/OnePlus7TProNR/OnePlus7TProNR:11/RKQ1.201022.002/2108021431:user/release-keys
