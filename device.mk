@@ -24,8 +24,10 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom \
-    fstab.qcom.ramdisk
+    fstab.qcom
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -37,12 +39,20 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Wifi Overlay
+PRODUCT_PACKAGES += \
+    OnePlus7tPro5gWifiOverlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
