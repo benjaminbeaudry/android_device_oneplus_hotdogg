@@ -13,7 +13,7 @@ vendor.sensors.als_correction.sensor_gaincal_points=1050.0 800.0 450.0 0.0
 vendor.sensors.als_correction.sensor_inverse_gain=0.097 0.133 0.175 0.265
 
 # Bluetooth
-bluetooth.device.default_name=OnePlus 7T Pro
+bluetooth.device.default_name=OnePlus 7T Pro 5G
 
 # Fingerprint
 vendor.boot.fingerprintbstate=orange
